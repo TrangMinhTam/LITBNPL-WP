@@ -1,5 +1,5 @@
 import React, { SyntheticEvent, useState } from 'react'
-import {Navbar,Nav,Container,NavDropdown,Dropdown, Button} from 'react-bootstrap'
+import {Navbar,Nav,Container,Dropdown} from 'react-bootstrap'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const Header = () => {
@@ -51,7 +51,7 @@ const Header = () => {
                       </Dropdown.Toggle>
 
                       <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1">Profile Admin</Dropdown.Item>
+                        <Dropdown.Item href="/change-password">Profile Admin</Dropdown.Item>
                         <Dropdown.Divider/>
                         <Dropdown.Item onClick={logoutHandler}>Log out</Dropdown.Item>
                       </Dropdown.Menu>

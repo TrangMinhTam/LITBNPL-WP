@@ -1,13 +1,16 @@
-import React from 'react';
+import React,{FC} from 'react';
 
 import './App.css';
 import Header from './components/Header';
+import Sidebar from './components/Sidebar';
 import LoginScreen from './screens/LoginScreen';
 import Dashboard from './screens/DashboardScreen';
+import ChangePasswordAdmin from './screens/ChangePasswordAdminScreen';
+import Cong_cu_tinh_khoan_vay from './screens/Cong-cu-tinh-khoan-vay';
 
 import {BrowserRouter as Router ,Redirect ,Switch, Route} from 'react-router-dom';
 import { useState } from 'react';
-function App() {
+const App:FC = ()=> {
   const Token = localStorage.getItem("accessName")
 
   let routes;
@@ -16,7 +19,8 @@ function App() {
     routes = (
       <Switch>
           <Route path="/" exact component={Dashboard} />
-          
+          <Route path="/change-password" component={ChangePasswordAdmin} />
+          <Route path="/cong-cu-tinh-khoan-vay" component={Cong_cu_tinh_khoan_vay} />
       </Switch>
     );
   }else {
@@ -24,7 +28,7 @@ function App() {
       <Switch>
           
           <Route path="/" component={LoginScreen} />
-          
+          <Route path="/cong-cu-tinh-khoan-vay" component={Cong_cu_tinh_khoan_vay} />
           <Route path="/dashboard" render={() =>{
             return Token ? {Dashboard} : <Redirect to="/"/>
           }}  /> 
@@ -35,7 +39,8 @@ function App() {
     <Router>
     {Token ?
     <div className="App">
-      <Header />  
+      {/* <Header /> */}
+      <Sidebar />
         {routes}
       </div>
       :

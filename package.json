@@ -1,5 +1,5 @@
 {
-  "homepage": "http://TamTrangMinh.github.io/lit-WebAdmin",
+  "homepage": "http://TrangMinhTam.github.io/LITBNPL-WP",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -27,8 +27,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -54,6 +54,9 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.37",
-    "gh-pages": "^3.2.3"
+    "@types/styled-components": "^5.1.18",
+    "gh-pages": "^3.2.3",
+    "react-icons": "^4.3.1",
+    "styled-components": "^5.3.3"
   }
 }

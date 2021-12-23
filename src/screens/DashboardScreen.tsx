@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-const DashboardScreen = () => {
+const DashboardScreen:FC = () => {
     return (
-        <h1>Dashboard</h1>
+        <>Dashboard</>
     )
 }
 

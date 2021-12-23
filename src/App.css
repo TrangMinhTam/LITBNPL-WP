@@ -39,9 +39,28 @@
 
 .MainCenter{
   align-items: center;
+  align-content: center;
 }
 
 .ms-auto .avatar{
   
   color: #fff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  color: white;
+}
+
+.overview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: black;
 }
