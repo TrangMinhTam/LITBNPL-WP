@@ -8,6 +8,11 @@ import { Submenu } from './Submenu';
 import { Navbar,Dropdown} from 'react-bootstrap';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
+const REACT_APP_CONFIG_IP_BE = process.env.REACT_APP_CONFIG_IP_BE;
+const REACT_APP_CONFIG_PORT_BE = process.env.REACT_APP_CONFIG_PORT_BE;
+
+const url = REACT_APP_CONFIG_IP_BE + ":" + REACT_APP_CONFIG_PORT_BE;
+
 const Nav =  styled.div`
     display: flex;
     justify-content: flex-start;
@@ -44,9 +49,9 @@ const Sidebar: FC = () => {
 
     const logoutHandler = async(e:SyntheticEvent) => {
         e.preventDefault()
+        const _url = url+'/admin/auth/logout';
         
-        
-        await fetch('http://localhost:8000/admin/auth/logout',{
+        await fetch('http://'+_url,{
           method: 'POST',
           headers: {'Content-Type' : 'application/json'},
           body: JSON.stringify({               

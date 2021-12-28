@@ -9,7 +9,10 @@ import ChangePasswordAdmin from './screens/ChangePasswordAdminScreen';
 import Cong_cu_tinh_khoan_vay from './screens/Cong-cu-tinh-khoan-vay';
 
 import {BrowserRouter as Router ,Redirect ,Switch, Route} from 'react-router-dom';
-import { useState } from 'react';
+
+require('dotenv').config();
+
+
 const App:FC = ()=> {
   const Token = localStorage.getItem("accessName")
 
