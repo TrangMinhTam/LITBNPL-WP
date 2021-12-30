@@ -16,30 +16,15 @@ interface Props {
 
 const LoginScreen = ({history}: Props) => {
 
-    
-
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-
     const [error,setError] = useState(null);
 
-    
     const submitHandler = async (e:SyntheticEvent) => {
         e.preventDefault() 
         console.log("inf: ",email,password);
         const _url = url+'/admin/auth/login';
         console.log("URL: "+ _url);
-
-        // const data = {
-        //     email: email,
-        //     password: password
-        //   };
-
-        // axios({
-        //     method: 'post',
-        //     url:'http://'+_url,
-        //     data: { data }
-        //   });
 
         await fetch('http://'+_url,{
             method: 'POST',
@@ -57,7 +42,7 @@ const LoginScreen = ({history}: Props) => {
                 localStorage.setItem("accessName","true");
                 const data = await res.json();                         
                 localStorage.setItem("userId",data.user._id);
-                window.location.href = ('/dashboard');                        
+                window.location.href = ('/');                        
             }
         })       
         .catch(err =>{

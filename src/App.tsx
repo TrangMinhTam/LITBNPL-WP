@@ -16,6 +16,8 @@ require('dotenv').config();
 const App:FC = ()=> {
   const Token = localStorage.getItem("accessName")
 
+  console.log("Token: ",Token);
+
   let routes;
 
   if(Token){

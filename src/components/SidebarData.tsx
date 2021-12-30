@@ -34,7 +34,7 @@ export const SidebarData: SidebarItem[] = [
         } ,
         {
                 title:"Đã tất toán",
-                path:"/cong-cu-tinh-khoan-vay",
+                path:"/change-password",
                 icon:<AiFillProfile/>,        
         } ,
         {
