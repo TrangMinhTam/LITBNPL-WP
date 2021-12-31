@@ -22,9 +22,8 @@ const LoginScreen = ({history}: Props) => {
 
     const submitHandler = async (e:SyntheticEvent) => {
         e.preventDefault() 
-        console.log("inf: ",email,password);
         const _url = url+'/admin/auth/login';
-        console.log("URL: "+ _url);
+
 
         await fetch('http://'+_url,{
             method: 'POST',
