@@ -24,42 +24,42 @@ export const SidebarData: SidebarItem[] = [
         },
         {
                 title:"Công cụ tính gợi ý mức vay",
-                path:"/cong-cu-tinh-khoan-vay",
+                path:"/cong-cu-tinh-goi-y-muc-vay",
                 icon:<AiFillCalculator/>,        
         },
         {
                 title:"Công cụ tính giá thẩm định",
-                path:"/cong-cu-tinh-khoan-vay",
+                path:"/cong-cu-tinh-gia-tham-dinh",
                 icon:<AiFillCalculator/>,        
         } ,
         {
                 title:"Đã tất toán",
-                path:"/change-password",
+                path:"/da-tat-toan",
                 icon:<AiFillProfile/>,        
         } ,
         {
                 title:"Chờ duyệt",
-                path:"/cong-cu-tinh-khoan-vay",
+                path:"/cho-duyet",
                 icon:<AiFillProfile/>,        
         } ,
         {
                 title:"Đang trả",
-                path:"/cong-cu-tinh-khoan-vay",
+                path:"/dang-tra",
                 icon:<AiFillProfile/>,        
         } ,
         {
                 title:"Trễ hẹn",
-                path:"/cong-cu-tinh-khoan-vay",
+                path:"/tre-hen",
                 icon:<AiFillProfile/>,        
         } ,
         {
                 title:"Chi phí mức sống",
-                path:"/cong-cu-tinh-khoan-vay",
+                path:"/chi-phi-muc-song",
                 icon:<AiFillSetting/>,        
         } ,
         {
                 title:"Chỉ số khả năng trả nợ",
-                path:"/cong-cu-tinh-khoan-vay",
+                path:"/chi-so-kha-nang-tra-no",
                 icon:<AiFillSetting/>,        
         },
                  
